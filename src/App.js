@@ -9,7 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
           <br />
-          hello world
+          hello world Tôi băt đâu học ReactJS
         </p>
         <a
           className="App-link"
