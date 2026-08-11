@@ -1,5 +1,14 @@
 import logo from './logo.svg';
 import './App.scss';
+import Mycomponent from './Example/mycomponent';
+
+/*
+2 components: class component / function component (function, arrow function)
+function component: function App() {}
+arrow function: const App = () => {}
+
+*/
+
 
 function App() {
   return (
@@ -17,8 +26,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React 
         </a>
+        <Mycomponent/>
       </header>
     </div>
   );
