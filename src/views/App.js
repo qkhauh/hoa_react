@@ -5,7 +5,7 @@ import { increaseCounter, decreaseCounter } from '../redux/action/counterAction'
 import mycomponent from './Example/mycomponent';
 import React from 'react';
 import Mycomponent from '../components/Mycomponet';
-import Userinfor from '../components/Userinfor';
+import AddUserinfor from '../components/AddUserinfor';
 
 /*
 2 components: class component / function component (function, arrow function)
