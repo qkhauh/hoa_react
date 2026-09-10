@@ -1,4 +1,4 @@
-import AddUserinfor from './AddUserinfor';
+import AddUserinfor from './AddUserInfor';
 import DisplayInfor from './DisplayInfor';
 //class component
  //function component
@@ -42,7 +42,7 @@ import DisplayInfor from './DisplayInfor';
         return(
             <>
                 {test}
-                <div classname='a'>
+                <div className='a'>
                 
                     <AddUserinfor chuyenData={this.chuyentuchasangcon}/>
                     <DisplayInfor listuser={this.state.listuser} xoaphantu={this.xoaphantu}/>

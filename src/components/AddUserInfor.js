@@ -6,7 +6,7 @@ class AddUserinfor extends React.Component{
         age: 20
     };
 
-    onhandage(event){
+    onhandage = (event) => {
         this.setState({
             age: event.target.value
         });
@@ -26,7 +26,7 @@ class AddUserinfor extends React.Component{
             age: this.state.age
         });
     }
-    
+
     render(){
         return(
             <div>
