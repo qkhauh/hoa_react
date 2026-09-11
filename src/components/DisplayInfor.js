@@ -1,4 +1,4 @@
-import React from 'react';//nhúng file react vào file js
+import React, {useState} from 'react';//nhúng file react vào file js
 import './DisplayInfor.scss';
 import logo from '../logo.svg';
 
@@ -29,10 +29,21 @@ import logo from '../logo.svg';
 //     }
 // }
 const DisplayInfor = (props) => {
-        const { listuser } = props;
+        const { listuser, xoaphantu } = props;
+
+        const [isShowHideListUser, setShowHideListUser] = useState(true);
+
+        const handleShowHideListUser = () => {
+            setShowHideListUser(!isShowHideListUser);
+        }
         return (
             <div className='display-infor-container'>
-                {true &&
+                <div>
+                    <span onClick={()=>handleShowHideListUser()}>
+                        {isShowHideListUser === true ? 'hide list user' : 'show list user'}
+                    </span>
+                </div>
+                {isShowHideListUser && 
                     <div>
                         {listuser.map((user, index) => {
                             return (
@@ -41,7 +52,7 @@ const DisplayInfor = (props) => {
                                     <div>and my age is {user.age}</div>
                                     <hr />
                                     <div>
-                                        <button onClick={() => props.xoaphantu(user.id)}>Xóa</button>
+                                        <button onClick={() => xoaphantu(user.id)}>Xóa</button>
                                     </div>
                                 </div>
                             )
